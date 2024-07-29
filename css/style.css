@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Google fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
+#logotipo {
+    width: 300px; height: 300px;
+}
+header{
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Navegable-encabezado {
+    display: flex;
+    font-size: 30px; 
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    list-style: none;
+    font-weight: bolder;
+    color: whitesmoke;
+    margin-right: 20px;
+      
+}
+
+body{
+    background-color: black;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.Eslogan {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 50px; 
+
+}
+
+main .img-exterior, main .img-living{
+display: none;
+}
+
+main section div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section{
+    margin: 0 30px;
+    height: 80vh;
+
+    display: grid;
+    grid-template-rows: repeat(3, 26%);
+    grid-template-columns: 1fr;
+    align-content: center;
+    row-gap: 20px;
+}
+
+@media screen and (min-width: 768px){
+    main section{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 40%);
+        column-gap: 20px;    
+    }
+    main .img-interior{
+        grid-column: span 2;
+    } 
+}
+
+@media screen and (min-width: 1024px){
+    main .img-exterior, main .img-living{
+        display: block;
+    }
+    
+    main section{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 35% 35% 15%;
+        column-gap: 20px;
+    }
+
+    main .img-living, main .img-exterior{
+        grid-row: span 2;
+    }
+
+    main .img-interior{
+        grid-column: span 3;
+    }  
+}
+
+h2 {
+    font-size: 40px;
+    color: rgb(218, 214, 8);
+    font-weight: bolder;
+    text-decoration-line: underline;
+}
+.Servicios{ 
+    font-size: 40px;
+    list-style-type: none;
+}
+video {
+    width: 300px;
+    border-radius: 20px;
+    margin: 20px;
+}
+footer{
+    padding-top: 20px;
+    height: 150px;
+    text-align: center;
+    background-color: gray;
+    font-family: 'Libre Franklin';
+    font-size: 30px;
+    color: black;
+    font-weight: bolder;
+    list-style-type: none;
+}
+.Logo-RS{
+    width: 40px;
+}
+footer ul {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+h1{
+    background-color: gray;
+    color:black;
+    font-weight: 900;
+    font-size: 100px;
+    
+}
+body section ul li img{
+    width: 40%;
+    height: 40%;
+    
+}
+#imagenes-muebles{
+    list-style-type: none;
+}
+p{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Libre Franklin'
+}
